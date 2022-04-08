@@ -3,7 +3,16 @@
 {% block title %}Hello HomepageController!{% endblock %}
 
 {% block body %}
-    <div class="example-wrapper">
-        <a href="{{ path('app_homepage') }}">Homepage</a>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br>
+                <a href="{{ path('app_pdf_download') }}">Generate and force PDF File download</a>
+                <hr>
+                <a href="{{ path('app_pdf_browser') }}">Generate and view PDF in the browser</a>
+                <hr>
+                <a href="{{ path('app_pdf_store') }}">Generate and store PDF in the disk</a>
+            </div>
+        </div>
     </div>
 {% endblock %}
